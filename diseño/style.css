@@ -1,0 +1,515 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+:root {
+
+    /* font-family: 'Be Vietnam Pro', sans-serif; */
+
+
+    --color-principal: #F3603B;
+    --color-secundario: #1E1E26;
+    --color-texto: #242E53;
+    --color-texto-gris: #B3B2B7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    /* outline: 1px solid red; */
+    letter-spacing: -0.05rem;
+}
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER */
+
+/* nav */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10.87rem;
+    font-size: 0.8125rem;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    margin: 1rem;
+}
+header nav ul li a {
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+.hamburguesa {
+    display: none;
+}
+.getstarted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.375rem;
+    height: 2.75rem;
+    border-radius: 3.125rem;
+    background-color: var(--color-principal);
+    box-shadow: 0 0.25rem 0.4375rem rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 0.82rem;
+}
+
+/* estilos generales secciones */
+
+.home, .sobrenosotros{
+    display: flex;
+    margin: 10vh 10vw;
+}
+.home article, .sobrenosotros article{
+    width: 45vw;
+}
+
+/* 1era seccion: home */
+
+.home {
+    align-items: center;
+}
+.home .fasehome div h1 {
+    color: var(--color-texto);
+    font-size: 3.625rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    max-width: 40vw;
+}
+.home .fasehome div.manage {
+    max-width: 21vw;
+    padding: 4vh 0;
+}
+.home .fasehome div.manage p {
+    color: var(--color-texto-gris);
+    line-height: 1.8rem;
+}
+
+/* 2da seccion: sobre nosotros */
+
+.sobrenosotros .what h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color: var(--color-texto);
+    max-width: 35rem;
+
+}
+.sobrenosotros .what p {
+    color: var(--color-texto-gris);
+    line-height: 1.8rem;
+    max-width: 20vw;
+}
+.frame {
+    display: flex;
+}
+.frame .cajabutton {
+    padding-right: 1rem;
+}
+.frame .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.31rem;
+    height: 2.68rem;
+    border-radius: 50px;
+    background-color: var(--color-principal);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.frame .texto {
+    max-width: 28rem;
+}
+.frame .texto .bold {
+    color: var(--color-texto);
+    font-weight: 700;
+    margin: 0.5rem 0 1.5rem 0;
+    max-width: 28rem;
+}
+.frame .texto .simple {
+    color: #B3B2B7;
+    max-width: 25.5rem;
+    margin: 0.5rem 0 1.5rem;
+    line-height: 1.6rem;
+}
+
+/* testimonios */
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding: 2vh 4vw;
+    margin: 15vh 0;
+}
+.testimonios h2 {
+    font-size: 3.85rem;
+    color: var(--color-texto);
+}
+.testimonios div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.testimonios div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+.testimonios div article img {
+    position: absolute;
+    top: -2rem;
+    width: 4rem;
+}
+.testimonios div article .persona {
+    color: var(--color-texto);
+    margin: 3rem 0 2rem 0;
+    font-weight: 700;
+}
+.testimonios div article .testimoniopersona {
+    color: #B9B9C1;
+    padding: 0 2vw;
+}
+.testimonios .deslizador {
+    display: none;
+}
+.testimonios .deslizador .circulo {
+    width: 6px;
+    height: 6px;
+    margin: 3px;
+    border-radius: 50%;
+    outline: 1px solid var(--color-principal);
+}
+.testimonios .deslizador .circuloconfondo{
+    background: var(--color-principal);
+}
+
+/* simplify */
+
+.simplify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+    height: 14rem;
+    padding: 6vh 10vw;
+}
+.simplify p {
+    width: 30rem;
+    color: white;
+    font-size: 2.5rem;
+}
+.simplify .blanco{
+    background-color: white;
+    color: var(--color-principal);
+}
+
+/* FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 6vh 10vw;
+}
+/* logoiconos */
+footer .logoiconos {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+footer .logoiconos p {
+    display: none;
+}
+footer .logoiconos div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+    gap: 10px;
+}
+footer .logoiconos div a i{
+    font-size: 1.3rem;
+}
+/* listas */
+footer .listas {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    padding: 0 8vw;
+    gap: 50px;
+}
+footer .listas ul li {
+    margin-bottom: 1.5rem;
+}
+/* form */
+footer .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .form form {
+    display: flex;
+    justify-content: flex-end;
+}
+footer .form form input.button{
+    width: 14rem;
+    height: 2.62rem;
+    background-color: white;
+    font-size: 0.78rem;
+    color: var(--color-principal);
+    border-radius: 50px;
+    border: 1px solid var(--color-principal);
+}
+form button.button{
+    width: 3.96rem;
+    height: 2.62rem;
+    margin-left: 0.5rem;
+    font-size: 0.78rem;
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid var(--color-principal);
+}
+footer .form p {
+    color: #8C8C94;
+    font-size: 0.78rem;
+}
+
+/* pseudoselectores y pseudoelemento*/
+.getstarted:hover, header nav ul li a:hover, form button.button:hover {
+    opacity: 0.5;    
+}
+footer .logoiconos div a i:hover, footer .listas ul li a:hover {
+    color: var(--color-principal);
+}
+input::placeholder{
+    color: var(--color-principal);
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+
+/* HEADER */
+
+/* nav */
+header {
+    justify-content: space-between;
+    padding: 0 6vw;
+    height: 18vh;
+}
+.nav {
+display: none;
+}
+.hamburguesa {
+    display: block;
+}
+
+/* MAIN */
+
+/* generales */
+.home, .sobrenosotros{
+    display: flex;
+    margin: 5vh 5vw;
+}
+.home article, .sobrenosotros article{
+    width: 100vw;
+}
+.getstartedchau, section div .personachau{
+    display: none;
+}
+/* 1era seccion: home */
+.home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.home article.fasehome div {
+    display: flex;
+    justify-content: center;
+}
+.home article.fasehome div h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 100%;
+}
+.home article.fasehome div.manage {
+    max-width: 100vw;
+    padding: 3vh 0 5vh 0;
+}
+.home article.fasehome div.manage p {
+    line-height: 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    max-width: 80%;
+    color: #B3B2B7;
+    text-align: center;
+}
+.home article.ilustracion div {
+    display: flex;
+    justify-content: center;
+}
+/* 2da seccion: sobre nosotros */
+.sobrenosotros{
+    flex-direction: column;
+    margin-top: 16vh;
+}
+.sobrenosotros .what {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9vh;
+}
+.sobrenosotros .what h2 {
+    font-size: 1.7rem;
+    max-width: 70%;
+    text-align: center;
+}
+.sobrenosotros .what p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    max-width: 70%;
+    color:#B3B2B7;
+    text-align: center;
+}
+.sobrenosotros .frame .button {
+    width: 3.9rem;
+    height: 2.25rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+.sobrenosotros .frame .texto {
+    max-width: 100%;
+    margin-left: -5rem;
+}
+.sobrenosotros .frame .texto .bold {
+    margin: 0 0 0 1rem;
+    padding: 0.2rem 0 0 4rem;
+    max-width: 100%;
+    height: 2.25rem;
+    background-color: #fff7f7;
+}
+.sobrenosotros .frame .texto .simple {
+    max-width: 100%;
+    margin: 2vh 0 7.5vh 0;
+    font-size: 0.9rem;
+}
+
+/* 3era seccion: testimonios */
+.testimonios {
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+}
+.testimonios h2 {
+    font-size: 2rem;
+}
+.testimonios div {
+    margin: 0 5vw;
+}
+.testimonios div article {
+    padding-bottom: 4vw;
+}
+.testimonios div article .testimoniopersona {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    max-width: 90%;
+    color:#B3B2B7;
+    text-align: center;
+}
+.testimonios .deslizador {
+    display: flex;
+}
+/* simplify */
+
+.simplify {
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    padding: 0;
+}
+.simplify p {
+    max-width: 80%;
+    margin: 8vh 0;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* FOOTER*/
+
+footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 4vh 4vw;
+}
+/* logoiconos */
+footer .logoiconos {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 0 0 0;
+    height: 30vh;
+}
+footer .logoiconos p {
+    display: block;
+    color: #8C8C94;
+    font-size: 0.7rem;
+    text-align: center;
+}
+footer .logoiconos img {
+    width: 40vw;
+}
+footer .logoiconos div {
+    margin-top: 0;
+    width: 70vw;
+}
+footer .logoiconos div a i{
+    font-size: 2rem;
+}
+/* listas */
+footer .listas {
+    width: 100%;
+    padding: 6vh 12vw 4vh;
+    font-size: 0.8rem;
+}
+footer .form {
+    align-items: center;
+}
+footer .form form {
+    justify-content: space-around;
+    width: 80vw;
+}
+footer .form p {
+    display: none;
+}
+
+}
