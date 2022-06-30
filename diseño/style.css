@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     letter-spacing: -0.05rem;
 }
 img {
@@ -163,6 +163,7 @@ header nav ul li a {
 .testimonios h2 {
     font-size: 3.85rem;
     color: var(--color-texto);
+    margin: 0 0 6vh;
 }
 .testimonios div {
     display: flex;
@@ -317,7 +318,7 @@ input::placeholder{
 
 /* HEADER */
 
-/* nav */
+/* nav MQ */
 header {
     justify-content: space-between;
     padding: 0 6vw;
@@ -332,7 +333,7 @@ display: none;
 
 /* MAIN */
 
-/* generales */
+/* generales MQ */
 .home, .sobrenosotros{
     display: flex;
     margin: 5vh 5vw;
@@ -343,7 +344,7 @@ display: none;
 .getstartedchau, section div .personachau{
     display: none;
 }
-/* 1era seccion: home */
+/* 1era seccion: home MQ */
 .home {
     flex-direction: column-reverse;
     justify-content: center;
@@ -375,10 +376,10 @@ display: none;
     display: flex;
     justify-content: center;
 }
-/* 2da seccion: sobre nosotros */
+/* 2da seccion: sobre nosotros MQ */
 .sobrenosotros{
     flex-direction: column;
-    margin-top: 16vh;
+    margin: 16vh 0 0;
 }
 .sobrenosotros .what {
     display: flex;
@@ -398,6 +399,9 @@ display: none;
     color:#B3B2B7;
     text-align: center;
 }
+.sobrenosotros .reasons {
+    padding: 0 2vw;
+}
 .sobrenosotros .frame .button {
     width: 3.9rem;
     height: 2.25rem;
@@ -407,7 +411,7 @@ display: none;
 }
 .sobrenosotros .frame .texto {
     max-width: 100%;
-    margin-left: -5rem;
+    margin: 0 0 0 -20.8vw;
 }
 .sobrenosotros .frame .texto .bold {
     margin: 0 0 0 1rem;
@@ -422,7 +426,7 @@ display: none;
     font-size: 0.9rem;
 }
 
-/* 3era seccion: testimonios */
+/* 3era seccion: testimonios MQ */
 .testimonios {
     height: 90vh;
     padding: 0;
@@ -448,17 +452,17 @@ display: none;
 .testimonios .deslizador {
     display: flex;
 }
-/* simplify */
+/* simplify MQ */
 
 .simplify {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     height: 60vh;
-    padding: 0;
+    padding: 3vh 0;
 }
 .simplify p {
     max-width: 80%;
-    margin: 8vh 0;
+    /* margin: 0 0; */
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
@@ -471,7 +475,7 @@ footer {
     justify-content: space-between;
     padding: 4vh 4vw;
 }
-/* logoiconos */
+/* logoiconos MQ */
 footer .logoiconos {
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -495,7 +499,7 @@ footer .logoiconos div {
 footer .logoiconos div a i{
     font-size: 2rem;
 }
-/* listas */
+/* listas MQ */
 footer .listas {
     width: 100%;
     padding: 6vh 12vw 4vh;
